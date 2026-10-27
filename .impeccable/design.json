@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-27T18:30:16Z",
+  "title": "Design System: Yazmin Fest",
+  "extensions": {
+    "colorMeta": {
+      "background": {
+        "role": "neutral",
+        "displayName": "Background White",
+        "canonical": "#fffefe",
+        "tonalRamp": [
+          "oklch(15% 0.000 17.2)",
+          "oklch(25% 0.001 17.2)",
+          "oklch(35% 0.001 17.2)",
+          "oklch(45% 0.001 17.2)",
+          "oklch(55% 0.001 17.2)",
+          "oklch(65% 0.001 17.2)",
+          "oklch(80% 0.000 17.2)",
+          "oklch(95% 0.000 17.2)"
+        ]
+      },
+      "foreground": {
+        "role": "neutral",
+        "displayName": "Foreground Ink",
+        "canonical": "#311e28",
+        "tonalRamp": [
+          "oklch(15% 0.008 346.8)",
+          "oklch(25% 0.017 346.8)",
+          "oklch(35% 0.034 346.8)",
+          "oklch(45% 0.034 346.8)",
+          "oklch(55% 0.034 346.8)",
+          "oklch(65% 0.034 346.8)",
+          "oklch(80% 0.012 346.8)",
+          "oklch(95% 0.002 346.8)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper White",
+        "canonical": "#fffefe",
+        "tonalRamp": [
+          "oklch(15% 0.000 17.2)",
+          "oklch(25% 0.001 17.2)",
+          "oklch(35% 0.001 17.2)",
+          "oklch(45% 0.001 17.2)",
+          "oklch(55% 0.001 17.2)",
+          "oklch(65% 0.001 17.2)",
+          "oklch(80% 0.000 17.2)",
+          "oklch(95% 0.000 17.2)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Text Ink",
+        "canonical": "#311e28",
+        "tonalRamp": [
+          "oklch(15% 0.008 346.8)",
+          "oklch(25% 0.017 346.8)",
+          "oklch(35% 0.034 346.8)",
+          "oklch(45% 0.034 346.8)",
+          "oklch(55% 0.034 346.8)",
+          "oklch(65% 0.034 346.8)",
+          "oklch(80% 0.012 346.8)",
+          "oklch(95% 0.002 346.8)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Plum",
+        "canonical": "#61424f",
+        "tonalRamp": [
+          "oklch(15% 0.012 352.5)",
+          "oklch(25% 0.023 352.5)",
+          "oklch(35% 0.047 352.5)",
+          "oklch(45% 0.047 352.5)",
+          "oklch(55% 0.047 352.5)",
+          "oklch(65% 0.047 352.5)",
+          "oklch(80% 0.016 352.5)",
+          "oklch(95% 0.003 352.5)"
+        ]
+      },
+      "wine": {
+        "role": "primary",
+        "displayName": "Deep Wine",
+        "canonical": "#45152f",
+        "tonalRamp": [
+          "oklch(15% 0.020 349.9)",
+          "oklch(25% 0.040 349.9)",
+          "oklch(35% 0.081 349.9)",
+          "oklch(45% 0.081 349.9)",
+          "oklch(55% 0.081 349.9)",
+          "oklch(65% 0.081 349.9)",
+          "oklch(80% 0.028 349.9)",
+          "oklch(95% 0.005 349.9)"
+        ]
+      },
+      "berry": {
+        "role": "primary",
+        "displayName": "Berry",
+        "canonical": "#8d1e4f",
+        "tonalRamp": [
+          "oklch(15% 0.038 359.2)",
+          "oklch(25% 0.075 359.2)",
+          "oklch(35% 0.151 359.2)",
+          "oklch(45% 0.151 359.2)",
+          "oklch(55% 0.151 359.2)",
+          "oklch(65% 0.151 359.2)",
+          "oklch(80% 0.053 359.2)",
+          "oklch(95% 0.009 359.2)"
+        ]
+      },
+      "rose": {
+        "role": "secondary",
+        "displayName": "Rose",
+        "canonical": "#d64a7b",
+        "tonalRamp": [
+          "oklch(15% 0.045 2.5)",
+          "oklch(25% 0.090 2.5)",
+          "oklch(35% 0.179 2.5)",
+          "oklch(45% 0.179 2.5)",
+          "oklch(55% 0.179 2.5)",
+          "oklch(65% 0.179 2.5)",
+          "oklch(80% 0.063 2.5)",
+          "oklch(95% 0.011 2.5)"
+        ]
+      },
+      "pinkwash": {
+        "role": "secondary",
+        "displayName": "Rose Wash",
+        "canonical": "#fff0f5",
+        "tonalRamp": [
+          "oklch(15% 0.004 355.1)",
+          "oklch(25% 0.009 355.1)",
+          "oklch(35% 0.017 355.1)",
+          "oklch(45% 0.017 355.1)",
+          "oklch(55% 0.017 355.1)",
+          "oklch(65% 0.017 355.1)",
+          "oklch(80% 0.006 355.1)",
+          "oklch(95% 0.001 355.1)"
+        ]
+      },
+      "leaf": {
+        "role": "tertiary",
+        "displayName": "Leaf Green",
+        "canonical": "#34543e",
+        "tonalRamp": [
+          "oklch(15% 0.013 153.5)",
+          "oklch(25% 0.026 153.5)",
+          "oklch(35% 0.053 153.5)",
+          "oklch(45% 0.053 153.5)",
+          "oklch(55% 0.053 153.5)",
+          "oklch(65% 0.053 153.5)",
+          "oklch(80% 0.019 153.5)",
+          "oklch(95% 0.003 153.5)"
+        ]
+      },
+      "leaf-soft": {
+        "role": "tertiary",
+        "displayName": "Soft Leaf",
+        "canonical": "#e8f0e9",
+        "tonalRamp": [
+          "oklch(15% 0.003 149.2)",
+          "oklch(25% 0.006 149.2)",
+          "oklch(35% 0.013 149.2)",
+          "oklch(45% 0.013 149.2)",
+          "oklch(55% 0.013 149.2)",
+          "oklch(65% 0.013 149.2)",
+          "oklch(80% 0.004 149.2)",
+          "oklch(95% 0.001 149.2)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Rose Line",
+        "canonical": "#e8cbd6",
+        "tonalRamp": [
+          "oklch(15% 0.009 353.0)",
+          "oklch(25% 0.018 353.0)",
+          "oklch(35% 0.036 353.0)",
+          "oklch(45% 0.036 353.0)",
+          "oklch(55% 0.036 353.0)",
+          "oklch(65% 0.036 353.0)",
+          "oklch(80% 0.012 353.0)",
+          "oklch(95% 0.002 353.0)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Editorial Display",
+        "purpose": "The uppercase Mis XV cover title."
+      },
+      "headline": {
+        "displayName": "Invitation Headline",
+        "purpose": "The closing RSVP heading."
+      },
+      "title": {
+        "displayName": "Section Title",
+        "purpose": "Primary headings between the cover and footer."
+      },
+      "script-name": {
+        "displayName": "Handwritten Name",
+        "purpose": "Yazmin’s name on the cover."
+      },
+      "script-fest": {
+        "displayName": "Handwritten Event Name",
+        "purpose": "The larger Fest treatment on the cover."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Event facts, captions, and supporting copy."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Compact uppercase event labels."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "WhatsApp, map, and copy-alias actions."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "hero-arrive",
+        "value": "900ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The cover copy enters with a short upward fade."
+      },
+      {
+        "name": "color-transition",
+        "value": "200ms",
+        "purpose": "Button color and arrow state changes."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "40rem"
+      },
+      {
+        "name": "md",
+        "value": "48rem"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary WhatsApp action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The solid deep-wine RSVP action on the light cover.",
+      "html": "<a class=\"ds-rsvp-primary\" href=\"#confirmar\"><span>Confirmar por WhatsApp</span><svg viewBox=\"0 0 20 20\" aria-hidden=\"true\"><path d=\"M5 15 15 5M6.5 5H15v8.5\"/></svg></a>",
+      "css": ".ds-rsvp-primary { display: inline-flex; width: 100%; min-height: 56px; align-items: center; justify-content: space-between; gap: 24px; border-radius: 12px; padding: 16px 24px; background: var(--wine); color: var(--paper); font-family: var(--font-manrope), Arial, sans-serif; font-size: 14px; font-weight: 600; line-height: 20px; text-align: left; text-decoration: none; transition: background-color 200ms; }\n.ds-rsvp-primary:hover { background: var(--berry); }\n.ds-rsvp-primary:focus-visible { outline: 2px solid var(--leaf); outline-offset: 4px; }\n.ds-rsvp-primary svg { width: 20px; height: 20px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; transition: transform 200ms; }\n.ds-rsvp-primary:hover svg { transform: translate(2px, -2px); }"
+    },
+    {
+      "name": "Light WhatsApp action",
+      "kind": "button",
+      "refersTo": "button-light",
+      "description": "The light RSVP variant used inside the deep-wine confirmation section.",
+      "html": "<a class=\"ds-rsvp-light\" href=\"#confirmar\"><span>+54 9 381 613-6054</span><svg viewBox=\"0 0 20 20\" aria-hidden=\"true\"><path d=\"M5 15 15 5M6.5 5H15v8.5\"/></svg></a>",
+      "css": ".ds-rsvp-light { display: inline-flex; width: 100%; min-height: 56px; align-items: center; justify-content: space-between; gap: 24px; border-radius: 12px; padding: 16px 24px; background: var(--paper); color: var(--wine); font-family: var(--font-manrope), Arial, sans-serif; font-size: 14px; font-weight: 600; line-height: 20px; text-align: left; text-decoration: none; transition: background-color 200ms; }\n.ds-rsvp-light:hover { background: var(--pinkwash); }\n.ds-rsvp-light:focus-visible { outline: 2px solid var(--leaf); outline-offset: 4px; }\n.ds-rsvp-light svg { width: 20px; height: 20px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; transition: transform 200ms; }\n.ds-rsvp-light:hover svg { transform: translate(2px, -2px); }"
+    },
+    {
+      "name": "Venue map link",
+      "kind": "button",
+      "refersTo": "button-outline-venue",
+      "description": "A compact outlined action for opening the venue location.",
+      "html": "<a class=\"ds-map-link\" href=\"#mapa\">Abrir ubicación<svg viewBox=\"0 0 20 20\" aria-hidden=\"true\"><path d=\"M5 15 15 5M6.5 5H15v8.5\"/></svg></a>",
+      "css": ".ds-map-link { display: inline-flex; min-height: 44px; align-items: center; gap: 8px; border: 1px solid var(--leaf); border-radius: 8px; padding: 8px 16px; background: var(--paper); color: var(--leaf); font-family: var(--font-manrope), Arial, sans-serif; font-size: 14px; font-weight: 600; line-height: 20px; text-decoration: none; transition: background-color 200ms, color 200ms; }\n.ds-map-link:hover { background: var(--leaf); color: var(--paper); }\n.ds-map-link:focus-visible { outline: 2px solid var(--leaf); outline-offset: 4px; }\n.ds-map-link svg { width: 16px; height: 16px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; transition: transform 200ms; }\n.ds-map-link:hover svg { transform: translate(2px, -2px); }"
+    },
+    {
+      "name": "Gift alias copy button",
+      "kind": "button",
+      "refersTo": "button-outline-alias",
+      "description": "An outlined copy action beneath the gift account alias.",
+      "html": "<button class=\"ds-alias-copy\" type=\"button\">Copiar alias</button>",
+      "css": ".ds-alias-copy { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; border: 1px solid var(--berry); border-radius: 8px; padding: 12px 20px; background: var(--paper); color: var(--berry); font-family: var(--font-manrope), Arial, sans-serif; font-size: 14px; font-weight: 600; line-height: 20px; transition: background-color 200ms, color 200ms; }\n.ds-alias-copy:hover { background: var(--berry); color: var(--paper); }\n.ds-alias-copy:focus-visible { outline: 2px solid var(--leaf); outline-offset: 4px; }"
+    },
+    {
+      "name": "Section heading",
+      "kind": "custom",
+      "refersTo": "section-heading",
+      "description": "A centered Bodoni Moda heading repeated between invitation sections.",
+      "html": "<h2 class=\"ds-section-title\">Nos encontramos</h2>",
+      "css": ".ds-section-title { margin: 0; color: var(--ink); font-family: var(--font-bodoni), Georgia, serif; font-size: 36px; font-weight: 500; line-height: 0.98; text-align: center; }\n@media (min-width: 40rem) { .ds-section-title { font-size: 48px; } }"
+    },
+    {
+      "name": "Botanical invitation title",
+      "kind": "custom",
+      "description": "The centered editorial and handwritten title pairing used on the cover.",
+      "html": "<h1 class=\"ds-invitation-title\"><span class=\"ds-invitation-kicker\">Mis XV</span><span class=\"ds-invitation-name\">Yazmin</span><span class=\"ds-invitation-fest\">Fest</span></h1>",
+      "css": ".ds-invitation-title { display: flex; margin: 0; flex-direction: column; align-items: center; margin: 0; color: var(--wine); text-align: center; }\n.ds-invitation-kicker { font-family: var(--font-bodoni), Georgia, serif; font-size: clamp(2.75rem, 12vw, 5.25rem); font-weight: 500; line-height: 0.8; letter-spacing: 0.14em; text-transform: uppercase; }\n.ds-invitation-name { margin-top: 16px; color: var(--berry); font-family: var(--font-parisienne), cursive; font-size: clamp(3.5rem, 14vw, 3.75rem); font-weight: 400; line-height: 0.92; }\n.ds-invitation-fest { margin-top: 32px; color: var(--berry); font-family: var(--font-parisienne), cursive; font-size: clamp(4.625rem, 23vw, 6rem); font-weight: 400; line-height: 0.88; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Botanical Keepsake",
+    "overview": "Yazmin Fest treats the page as a personal botanical keepsake that unfolds into a useful invitation. An open white cover introduces the celebration with centered editorial lettering, Yazmin’s handwritten name, delicate floral corners, and a supplied portrait rising from the lower edge.\n\nBeyond the cover, the page stays airy and legible. Fine rules and leaf-green details organize open, print-like sections; soft rose and deep wine mark purposeful changes in tone. Supplied portrait photographs stay full-color and carry their natural field and garden hues.",
+    "keyCharacteristics": [
+      "Bright white as the dominant field, with botanical corner artwork.",
+      "A high-contrast editorial face paired with a fine handwritten name.",
+      "Berry, rose, and leaf-green details balanced by dark wine and soft rose sections.",
+      "Natural-color supplied photography and an easy-to-scan vertical story."
+    ],
+    "rules": [
+      {
+        "name": "The Botanical Keepsake Rule",
+        "body": "Keep the identity centered, light, and personal: editorial lettering, Yazmin’s handwritten name, botanical art, and the supplied portraits.",
+        "section": "overview"
+      },
+      {
+        "name": "The White-Field Rule",
+        "body": "Bright white remains the dominant canvas; rose wash and deep wine create purposeful bands while leaf green stays in small labels and utility actions.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Voice Rule",
+        "body": "Bodoni Moda carries the editorial hierarchy; Parisienne is reserved for Yazmin’s name and handwritten signature treatment.",
+        "section": "typography"
+      },
+      {
+        "name": "The Photo-First Rule",
+        "body": "Use full-color photography and restrained tonal sections to create depth; this surface has no shadow vocabulary.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep bright white dominant, with berry and rose accents and small leaf-green details.",
+      "Do use Bodoni Moda for editorial headings, Manrope for practical copy and controls, and Parisienne for Yazmin’s handwritten name and signature.",
+      "Do keep supplied portraits natural and full-color; use spacing, fine rules, and quiet tonal bands to organize sections.",
+      "Do keep the WhatsApp action prominent and retain the leaf-green keyboard focus ring."
+    ],
+    "donts": [
+      "Don’t introduce beige or silver surfaces.",
+      "Don’t replace the open vertical invitation flow with rows of equal floating cards.",
+      "Don’t tint or recolor the supplied portrait photographs."
+    ]
+  }
+}
