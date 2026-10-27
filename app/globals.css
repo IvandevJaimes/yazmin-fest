@@ -51,6 +51,17 @@ main > footer {
   scroll-snap-stop: always;
 }
 
+@media (max-width: 767px) {
+  html {
+    scroll-snap-type: y proximity;
+  }
+
+  main > section,
+  main > footer {
+    scroll-snap-stop: normal;
+  }
+}
+
 body {
   min-height: 100%;
   background: var(--background);

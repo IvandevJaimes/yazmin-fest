@@ -16,7 +16,7 @@ function getRevealObserver() {
         }
       }
     },
-    { rootMargin: "0px 0px -8% 0px", threshold: 0.08 },
+    { rootMargin: "64px 0px 64px 0px", threshold: 0.01 },
   );
 
   return revealObserver;
@@ -63,10 +63,23 @@ export function ScrollReveal({
       return;
     }
 
+    const reveal = () => {
+      element.dataset.motionVisible = "true";
+      observer.unobserve(element);
+      window.removeEventListener("scroll", revealIfVisible);
+      window.removeEventListener("resize", revealIfVisible);
+    };
+
+    const revealIfVisible = () => {
+      const bounds = element.getBoundingClientRect();
+      if (bounds.top < window.innerHeight * 0.96 && bounds.bottom > 0) {
+        reveal();
+      }
+    };
+
     const respectMotionPreference = () => {
       if (motionPreference.matches) {
-        element.dataset.motionVisible = "true";
-        observer.unobserve(element);
+        reveal();
       }
     };
     motionPreference.addEventListener("change", respectMotionPreference);
@@ -76,15 +89,19 @@ export function ScrollReveal({
       motionPreference.matches ||
       (bounds.top < window.innerHeight * 0.92 && bounds.bottom > 0)
     ) {
-      element.dataset.motionVisible = "true";
+      reveal();
     } else {
       element.dataset.motionReady = "true";
       observer.observe(element);
+      window.addEventListener("scroll", revealIfVisible, { passive: true });
+      window.addEventListener("resize", revealIfVisible);
     }
 
     element.dataset.motionReady = "true";
     return () => {
       observer.unobserve(element);
+      window.removeEventListener("scroll", revealIfVisible);
+      window.removeEventListener("resize", revealIfVisible);
       motionPreference.removeEventListener("change", respectMotionPreference);
     };
   }, []);
