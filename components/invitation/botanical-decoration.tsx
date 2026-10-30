@@ -81,13 +81,13 @@ export function BotanicalDecoration({
   const palette =
     variant === "light"
       ? {
-          ink: "var(--botanical-champagne, #f4efea)",
-          accent: "var(--botanical-champagne-deep, #dfc5b0)",
+          ink: "var(--botanical-champagne, #f6e9d3)",
+          accent: "var(--botanical-champagne-deep, #e1c49d)",
           opacity: 0.38,
         }
       : {
-          ink: "var(--botanical-plum, #5a2d48)",
-          accent: "var(--botanical-plum-soft, #7a4264)",
+          ink: "var(--botanical-silver, #969da1)",
+          accent: "var(--botanical-silver-soft, #c2c8ca)",
           opacity: 0.3,
         };
 

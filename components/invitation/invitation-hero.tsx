@@ -11,7 +11,7 @@ export function InvitationHero() {
       className="bg-background relative isolate min-h-[100svh] overflow-hidden"
       id="inicio"
     >
-      <div className="hero-portrait absolute bottom-0 left-1/2 z-0 h-[44svh] max-h-[31rem] w-full max-w-[64rem] -translate-x-1/2 overflow-hidden sm:h-[52svh]">
+      <div className="hero-portrait absolute bottom-0 left-1/2 z-0 h-[56svh] max-h-[34rem] w-full max-w-[64rem] -translate-x-1/2 overflow-hidden sm:h-[60svh]">
         <Image
           alt=""
           className="object-cover object-[center_30%]"
@@ -28,7 +28,7 @@ export function InvitationHero() {
       >
         <Image
           alt=""
-          className="object-contain opacity-75"
+          className="object-contain opacity-100"
           fill
           sizes="100vw"
           src={botanicalCorners}
@@ -42,20 +42,13 @@ export function InvitationHero() {
             className="flex flex-col items-center text-wine"
             id="invitation-title"
           >
-            <span className="font-display text-[clamp(2.75rem,12vw,5.25rem)] font-medium uppercase leading-[0.8] tracking-[0.14em]">
+            <span className="font-display text-[clamp(2.75rem,12vw,5.25rem)] font-medium uppercase leading-[0.8] tracking-[0.14em] text-ink">
               Mis XV
             </span>
-            <span className="mt-4 font-script text-[clamp(3.5rem,14vw,3.75rem)] leading-[0.92] text-berry">
+            <span className="mt-4 mb-6 font-script text-[clamp(3.5rem,14vw,3.75rem)] leading-[0.92] text-berry">
               {invitation.name}
             </span>
-            <span className="mt-8 font-script text-[clamp(4rem,18vw,5.25rem)] leading-[0.88] text-berry">
-              Fest
-            </span>
           </h1>
-
-          <p className="mt-6 font-display text-2xl text-ink sm:text-3xl">
-            {invitation.dateLabel} · {invitation.guestArrival} hs
-          </p>
           <p className="mt-2 max-w-sm text-sm leading-6 text-muted sm:text-base">
             Te invito a celebrar conmigo una noche muy especial.
           </p>

@@ -1,20 +1,16 @@
 import { invitation, mapEmbedUrl } from "@/lib/invitation";
+import { DressCodeFeature } from "./dress-code-feature";
 import { ScrollReveal } from "./scroll-reveal";
-import { SectionTitle } from "./section-title";
 
 export function EventDetails() {
   return (
     <section
-      aria-labelledby="details-title"
+      aria-label="Detalles del evento"
       className="bg-paper relative isolate flex min-h-svh items-center overflow-hidden px-6 py-16 sm:py-20"
       id="detalles"
     >
       <div className="relative z-10 mx-auto w-full max-w-6xl">
-        <ScrollReveal className="text-center" variant="heading">
-          <SectionTitle id="details-title">Nos encontramos</SectionTitle>
-        </ScrollReveal>
-
-        <div className="mt-12 grid divide-y divide-line border-y border-line md:grid-cols-[0.8fr_1fr_1.2fr] md:divide-x md:divide-y-0">
+        <div className="grid divide-y divide-line border-y border-line md:grid-cols-[0.8fr_1fr_1.2fr] md:divide-x md:divide-y-0">
           <ScrollReveal
             className="flex flex-col items-center justify-center py-9 text-center md:px-8"
             delayMs={0}
@@ -78,6 +74,7 @@ export function EventDetails() {
             />
           </ScrollReveal>
         </div>
+        <DressCodeFeature />
       </div>
     </section>
   );

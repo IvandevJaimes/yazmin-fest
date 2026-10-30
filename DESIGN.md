@@ -2,18 +2,26 @@
 name: Yazmin Fest
 description: A bright botanical invitation for Yazmin’s quinceañera.
 colors:
-  background: "#fffefe"
-  foreground: "#311e28"
-  paper: "#fffefe"
-  ink: "#311e28"
-  muted: "#61424f"
-  wine: "#45152f"
-  berry: "#8d1e4f"
-  rose: "#d64a7b"
-  pinkwash: "#fff0f5"
-  leaf: "#34543e"
-  leaf-soft: "#e8f0e9"
-  line: "#e8cbd6"
+  background: "#f3e7d3"
+  foreground: "#533b2a"
+  paper: "#fff9ef"
+  ink: "#533b2a"
+  muted: "#765a45"
+  wine: "#694832"
+  berry: "#98565f"
+  rose: "#d4a19b"
+  pinkwash: "#f0e1d2"
+  leaf: "#657650"
+  leaf-soft: "#e7ebd9"
+  silver: "#c0c0c0"
+  silver-soft: "#dedede"
+  silver-dark: "#3d3d3e"
+  dress-code-beige: "#d9c4a6"
+  dress-code-silver-light: "#f4f5f6"
+  dress-code-silver-mid: "#aeb4b8"
+  dress-code-silver-shadow: "#7f898f"
+  dress-code-silver-highlight: "#eceeef"
+  line: "#aeb2b4"
 typography:
   display:
     fontFamily: "Bodoni Moda, serif"
@@ -102,46 +110,47 @@ components:
 
 **Creative North Star: “The Botanical Keepsake”**
 
-Yazmin Fest treats the page as a personal botanical keepsake that unfolds into a useful invitation. An open white cover introduces the celebration with centered editorial lettering, Yazmin’s handwritten name, delicate floral corners, and a supplied portrait rising from the lower edge.
+Yazmin Fest treats the page as a personal botanical keepsake that unfolds into a useful invitation. A warm beige cover introduces the celebration with centered editorial lettering, Yazmin’s handwritten name, delicate floral corners, and a supplied portrait rising from the lower edge.
 
-Beyond the cover, the page stays airy and legible. Fine rules and leaf-green details organize open, print-like sections; soft rose and deep wine mark purposeful changes in tone. Supplied portrait photographs stay full-color and carry their natural field and garden hues.
+Beyond the cover, the page stays airy and legible. Fine silver rules and accents organize open, print-like sections; cocoa brown marks purposeful changes in tone. Supplied portrait photographs stay full-color and carry their natural field and garden hues.
 
 **Key Characteristics:**
-- Bright white as the dominant field, with botanical corner artwork.
+- Warm beige as the dominant field, with botanical corner artwork.
 - A high-contrast editorial face paired with a fine handwritten name.
-- Berry, rose, and leaf-green details balanced by dark wine and soft rose sections.
+- Dusty-rose and sage accents balanced by cocoa-brown sections.
 - Natural-color supplied photography and an easy-to-scan vertical story.
 
 **The Botanical Keepsake Rule.** Keep the identity centered, light, and personal: editorial lettering, Yazmin’s handwritten name, botanical art, and the supplied portraits.
 
 ## Colors
 
-The palette pairs a bright white canvas with berry and rose accents, dark wine anchors, and restrained leaf green.
+The palette pairs a warm beige canvas with dusty-rose and sage pastel text accents, silver details and closing panels, and cocoa-brown anchors.
 
 ### Section surfaces
-- **Paper:** The hero, event details, gallery, and gift sections use the bright white paper surface.
-- **Rose wash:** The countdown uses the pale rose surface.
-- **Deep wine:** RSVP and the closing section use the dark wine surface, with light text and controls.
+- **Beige:** The hero, event details, gallery, and gift sections use warm beige paper.
+- **Sand wash:** The countdown uses a pale beige surface.
+- **Dark Silver:** RSVP and the closing section use dark silver backgrounds, with light text and controls.
 
 ### Primary
-- **Berry:** The key celebratory accent for Yazmin’s script name and the gift-alias action.
-- **Deep Wine:** The darkest brand color, used for prominent title text, the solid WhatsApp action, and the RSVP and footer fields.
+- **Dusty Rose:** The key accent for Yazmin’s script name and selected utility actions.
+- **Cocoa Brown:** A warm neutral for prominent title text, the solid WhatsApp action, and supporting copy.
 
 ### Secondary
-- **Rose:** A lively accent for fine underlines, small details, and the custom scrollbar.
-- **Rose Wash:** A pale tonal surface used to distinguish the countdown from the white sections.
+- **Pastel Rose:** A soft accent for Yazmin’s script name and small details.
+- **Sand Wash:** A pale tonal surface used to distinguish the countdown from beige sections.
 
 ### Tertiary
-- **Leaf Green:** A botanical utility accent for event labels, map actions, and keyboard focus.
-- **Soft Leaf:** A pale botanical surface token defined in the palette; it is not applied to a major section in the current page.
+- **Sage:** A muted botanical accent for event labels and map actions.
+- **Soft Sage:** A pale botanical surface token in the palette.
+- **Silver:** Fine dividers, controls, botanical line art, focus rings, and the scrollbar.
 
 ### Neutral
-- **Bright White:** The page’s open background and the light surface for controls.
+- **Warm Beige:** The page’s open background and the light surface for controls.
 - **Ink:** The primary dark text color.
-- **Muted Plum:** Supporting copy and captions.
-- **Rose Line:** Fine dividers and open section boundaries.
+- **Muted Cocoa:** Supporting copy and captions.
+- **Silver Line:** Fine dividers and open section boundaries.
 
-**The White-Field Rule.** Bright white remains the dominant canvas; rose wash and deep wine create purposeful bands while leaf green stays in small labels and utility actions.
+**The Beige, Pastel, and Silver Rule.** Beige remains the dominant canvas; dark silver frames the final RSVP and sign-off sections with light text, while dusty rose and sage color headings and labels elsewhere.
 
 ## Typography
 
@@ -168,11 +177,11 @@ The invitation is mobile-first and vertically centered around the cover. The her
 
 Content sections use a 24px horizontal gutter and generous vertical padding. The main content is centered within widths from 48rem to 72rem. The event details stack into date, time, and venue rows on narrow screens, then become three columns at the medium breakpoint. Each section fills at least one viewport and aligns to the page’s vertical scroll snap, creating a presentation-like progression with native scrolling.
 
-The implementation uses Tailwind’s small, medium, and large breakpoints at 640px, 768px, and 1024px. The invitation advances through its main sections with vertical scroll snapping. The gallery is one continuous section with a larger video followed by a responsive masonry album.
+The implementation uses Tailwind’s small, medium, and large breakpoints at 640px, 768px, and 1024px. The invitation advances through its main sections with vertical scroll snapping. The gallery is one continuous responsive masonry album.
 
-The video opens the gallery, followed by one Pinterest-style flow of naturally sized photographs. The closing portrait sits in the final signature section so it is the last image in the invitation.
+The gallery is one Pinterest-style flow of naturally sized photographs. The closing portrait sits in the final signature section so it is the last image in the invitation.
 
-The cover keeps its supplied floral corner artwork as a still image. Content sections use fine line-art laurel and flower SVGs in their open edges: plum on light panels and champagne on wine panels. The stems draw on first entry, leaves and petals unfold in a stagger, and the finished artwork sways gently while visible. The decoration stays behind section content, scales down on mobile, and respects reduced-motion preferences.
+The cover keeps its supplied floral corner artwork as a still image, softened into beige and dusty rose. Content sections use fine line-art laurel and flower SVGs in their open edges: silver on light panels and pale champagne on silver panels. The stems draw on first entry, leaves and petals unfold in a stagger, and the finished artwork sways gently while visible. The decoration stays behind section content, scales down on mobile, and respects reduced-motion preferences.
 
 ## Elevation & Depth
 
@@ -182,7 +191,7 @@ Depth comes from the supplied photography, the hero’s soft image fade, and fin
 
 ## Shapes
 
-The form language is restrained and print-like: photos use a 12px radius and video uses a 16px radius. Utility controls use gently rounded corners (8px), and the prominent WhatsApp actions use a 12px radius. Thin borders define the map and alias actions, while fine horizontal and vertical rules divide event details. Sections remain open rather than forming a repeated rounded-card grid.
+The form language is restrained and print-like: photos use a 12px radius. Utility controls use gently rounded corners (8px), and the prominent WhatsApp actions use a 12px radius. Thin borders define the map and alias actions, while fine horizontal and vertical rules divide event details. Sections remain open rather than forming a repeated rounded-card grid.
 
 ## Components
 
@@ -190,35 +199,35 @@ The form language is restrained and print-like: photos use a 12px radius and vid
 The actions are clear, compact, and easy to reach.
 
 - **Shape:** WhatsApp links use a 12px radius; map and copy-alias controls use an 8px radius.
-- **Primary:** The WhatsApp action uses a deep-wine fill with a light label, 24px horizontal and 16px vertical padding, and a 56px minimum height.
-- **Light:** In the wine RSVP section, WhatsApp actions use a paper-white fill and change to rose wash on hover.
-- **Secondary:** The map action has a leaf-green outline and fills leaf green on hover. The copy-alias button has a berry outline and fills berry on hover.
-- **Focus:** Keyboard focus uses a 2px leaf-green outline with a 4px offset. Color transitions run for 200ms.
+- **Primary:** The WhatsApp action uses a cocoa-brown fill with a light label, 24px horizontal and 16px vertical padding, and a 56px minimum height.
+- **Light:** In the dark-silver RSVP section, WhatsApp actions use a beige-paper fill with cocoa text.
+- **Secondary:** Map and copy-alias controls use silver, sage, and dusty-rose outlines and fills on hover.
+- **Focus:** Keyboard focus uses a 2px silver outline with a 4px offset. Color transitions run for 200ms.
 
 ### Countdown
-A rose-wash band holds four equal-width time columns. Bodoni Moda numerals use 36px on the narrow layout and 60px at the small breakpoint; fine rose-line dividers and compact uppercase labels keep the units distinct.
+A sand-wash band holds four equal-width time columns. Bodoni Moda numerals use 36px on the narrow layout and 60px at the small breakpoint; fine silver dividers and compact uppercase labels keep the units distinct.
 
 ### Event details
-The date, arrival times, and venue sit in open rows divided by fine rules. The date numeral is 96px, the time values use 36px and grow to 48px at the small breakpoint, and the venue uses 30px and grows to 36px.
+The date, arrival times, and venue sit in open rows divided by fine rules. A prominent dress-code feature sits within the same section, with a large editorial heading and visual beige and silver swatches. The date numeral is 96px, the time values use 36px and grow to 48px at the small breakpoint, and the venue uses 30px and grows to 36px.
 
 ### Botanical invitation cover
 The centered “Mis XV” title pairs with Yazmin’s handwritten name and “Fest,” with floral corner artwork above and the portrait material entering from below. The portrait is softly masked at its top edge; the composition remains one centered vertical cover.
 
 ### Portrait gallery
-The supplied images keep their original proportions in a responsive masonry composition. Tapping a photo opens it directly against a dark overlay in an enlarged viewer that closes with Escape. The closing portrait sits beneath the handwritten signature in the last section. Photos and video use rounded corners without decorative frames. The enlarged video is muted, loops, and plays while visible unless reduced motion is enabled.
+The supplied images keep their original proportions in a responsive masonry composition. Tapping a photo opens it directly against a dark overlay in an enlarged viewer that closes with Escape. The closing portrait sits beneath the handwritten signature in the last section. Photos use rounded corners without decorative frames.
 
 ### Motion
-Native vertical scroll snapping advances between the main sections; existing scroll reveals bring content into view. Event facts settle in sequence, the countdown emerges as guests arrive, the masonry photos preserve their natural proportions, and the gift and RSVP sections open in place. The cover’s floral artwork stays still. Five fine-line SVG families—peony and olive, lavender and wildflowers, magnolia and eucalyptus, rose and laurel, and a lily/anemone arrangement—frame the open edges of their own sections with hand-drawn, non-repeating branches. Stems draw on entry, blooms use distinct reveals, and each branch and flower has a separate wind cycle. The video opens into its frame and pauses while offscreen. Reduced-motion preferences present the botanical art fully drawn without movement, disable smooth travel, and soften snapping.
+Native vertical scroll snapping advances between the main sections; existing scroll reveals bring content into view. Event facts settle in sequence, the countdown emerges as guests arrive, the masonry photos preserve their natural proportions, and the gift and RSVP sections open in place. The cover’s floral artwork stays still. Five fine-line SVG families—peony and olive, lavender and wildflowers, magnolia and eucalyptus, rose and laurel, and a lily/anemone arrangement—frame the open edges of their own sections with hand-drawn, non-repeating branches. Stems draw on entry, blooms use distinct reveals, and each branch and flower has a separate wind cycle. Reduced-motion preferences present the botanical art fully drawn without movement, disable smooth travel, and soften snapping.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** keep bright white dominant, with berry and rose accents and small leaf-green details.
+- **Do** keep beige dominant, with silver details and dusty-rose, sage, and cocoa accents.
 - **Do** use Bodoni Moda for editorial headings, Manrope for practical copy and controls, and Parisienne for Yazmin’s handwritten name and signature.
 - **Do** keep supplied portraits natural and full-color; use spacing, fine rules, and quiet tonal bands to organize sections.
-- **Do** keep the WhatsApp action prominent and retain the leaf-green keyboard focus ring.
+- **Do** keep the WhatsApp action prominent and retain the silver keyboard focus ring.
 
 ### Don't:
-- **Don't** introduce beige or silver surfaces.
+- **Don't** reintroduce plum, pink, or green accents into the interface palette.
 - **Don't** replace the open vertical invitation flow with rows of equal floating cards.
 - **Don't** tint or recolor the supplied portrait photographs.

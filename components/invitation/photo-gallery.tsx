@@ -12,7 +12,6 @@ import ImageInPark from "@/assets/WhatsApp Image 2026-10-27 at 11.01.56(8).jpeg"
 import ImageUnderTrees from "@/assets/WhatsApp Image 2026-10-27 at 11.01.56(9).jpeg";
 import ImageParkPortrait from "@/assets/WhatsApp Image 2026-10-27 at 11.01.57(2).jpeg";
 import ImageParkWide from "@/assets/WhatsApp Image 2026-10-27 at 11.01.57(3).jpeg";
-import { AutoplayVideo } from "./autoplay-video";
 import { BotanicalDecoration } from "./botanical-decoration";
 import { PhotoLightbox, PhotoLightboxTrigger } from "./photo-lightbox";
 import { ScrollReveal } from "./scroll-reveal";
@@ -99,7 +98,7 @@ export function PhotoGallery() {
   return (
     <section
       aria-labelledby="memories-title"
-      className="bg-paper relative isolate overflow-hidden px-6 py-16 sm:py-20"
+      className="bg-paper relative isolate overflow-hidden px-4 py-16 sm:px-6 sm:py-20"
       id="fotos"
     >
       <BotanicalDecoration
@@ -122,21 +121,10 @@ export function PhotoGallery() {
           </SectionTitle>
         </ScrollReveal>
 
-        <ScrollReveal
-          className="mt-9 w-full max-w-[20rem] sm:max-w-[24rem] md:mt-12 md:max-w-[27rem]"
-          variant="opening"
-        >
-          <AutoplayVideo
-            label="Video vertical de Yazmin con su ramo en el campo"
-            poster={ImageInField.src}
-            src="/yazmin-15-preview.mp4"
-          />
-        </ScrollReveal>
-
-        <div className="mt-12 w-full md:mt-16">
+        <div className="mt-9 w-full md:mt-12">
           <ServerPhotoAlbum
             breakpoints={[240, 560, 880, 1200]}
-            columns={(width) => (width < 560 ? 2 : width < 880 ? 3 : 4)}
+            columns={(width) => (width < 880 ? 2 : 3)}
             componentsProps={{
               container: { "aria-label": "Galería de fotos de Yazmin" },
             }}
@@ -146,11 +134,11 @@ export function PhotoGallery() {
             sizes={{
               size: "1280px",
               sizes: [
-                { viewport: "(max-width: 767px)", size: "calc(100vw - 48px)" },
-                { viewport: "(max-width: 1279px)", size: "calc(100vw - 64px)" },
+                { viewport: "(max-width: 767px)", size: "calc(100vw - 32px)" },
+                { viewport: "(max-width: 1279px)", size: "calc(100vw - 48px)" },
               ],
             }}
-            spacing={(width) => (width < 560 ? 12 : 18)}
+            spacing={(width) => (width < 560 ? 10 : 16)}
           />
         </div>
       </div>

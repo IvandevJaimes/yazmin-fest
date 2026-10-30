@@ -7,8 +7,9 @@ export function RsvpSection() {
   return (
     <section
       aria-labelledby="rsvp-title"
-      className="bg-wine relative isolate flex min-h-svh items-center overflow-hidden px-6 py-16 text-paper sm:py-20"
+      className="relative isolate flex min-h-svh items-center overflow-hidden px-6 py-16 text-paper sm:py-20"
       id="confirmar"
+      style={{ backgroundColor: "var(--silver-dark)" }}
     >
       <BotanicalDecoration composition="rose-laurel" position="top-left" variant="light" />
       <BotanicalDecoration composition="rose-laurel" position="top-right" variant="light" />

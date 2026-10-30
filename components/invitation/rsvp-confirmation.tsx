@@ -311,7 +311,7 @@ export function RsvpConfirmation({
                   autoComplete="given-name"
                   aria-describedby={errors.firstName ? firstNameErrorId : undefined}
                   aria-invalid={errors.firstName ? "true" : "false"}
-                  className="min-h-12 w-full rounded-lg border border-line bg-white px-3 py-2 text-base text-ink outline-none transition focus:border-berry focus:ring-2 focus:ring-berry/15"
+                  className="min-h-12 w-full rounded-lg border border-line bg-paper px-3 py-2 text-base text-ink outline-none transition focus:border-berry focus:ring-2 focus:ring-berry/15"
                   id={firstNameId}
                   maxLength={60}
                   {...register("firstName", {
@@ -342,7 +342,7 @@ export function RsvpConfirmation({
                   autoComplete="family-name"
                   aria-describedby={errors.lastName ? lastNameErrorId : undefined}
                   aria-invalid={errors.lastName ? "true" : "false"}
-                  className="min-h-12 w-full rounded-lg border border-line bg-white px-3 py-2 text-base text-ink outline-none transition focus:border-berry focus:ring-2 focus:ring-berry/15"
+                  className="min-h-12 w-full rounded-lg border border-line bg-paper px-3 py-2 text-base text-ink outline-none transition focus:border-berry focus:ring-2 focus:ring-berry/15"
                   id={lastNameId}
                   maxLength={60}
                   {...register("lastName", {
@@ -370,7 +370,7 @@ export function RsvpConfirmation({
             </legend>
             {whatsappContacts.map((contact, index) => (
               <a
-                className="group flex min-h-12 items-center justify-between gap-3 rounded-lg border border-line bg-white px-4 py-3 text-sm font-semibold text-wine transition-colors hover:border-berry hover:bg-pinkwash focus-visible:outline-offset-2"
+                className="group flex min-h-12 items-center justify-between gap-3 rounded-lg border border-line bg-paper px-4 py-3 text-sm font-semibold text-wine transition-colors hover:border-berry hover:bg-pinkwash focus-visible:outline-offset-2"
                 href={getConfirmationUrl(contact.number)}
                 key={contact.number}
                 onClick={(event) => handleContactClick(event, contact.number)}
