@@ -1,6 +1,6 @@
 import Image from "next/image";
 import botanicalCorners from "@/assets/botanical-corners-v3.png";
-import portrait from "@/assets/WhatsApp Image 2026-10-27 at 11.01.55(6).jpeg";
+import portrait from "@/assets/WhatsApp Image 2026-10-30 at 16.35.27.jpeg";
 import { invitation } from "@/lib/invitation";
 import { RsvpConfirmation } from "./rsvp-confirmation";
 

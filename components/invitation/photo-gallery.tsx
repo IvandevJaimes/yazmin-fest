@@ -1,17 +1,11 @@
 import Image, { type StaticImageData } from "next/image";
-import ServerPhotoAlbum from "react-photo-album/server";
-import type { Photo, RenderImage } from "react-photo-album";
-import "react-photo-album/masonry.css";
-import ImageAtField from "@/assets/WhatsApp Image 2026-10-27 at 11.01.55(6).jpeg";
-import ImageAtSunset from "@/assets/WhatsApp Image 2026-10-27 at 11.01.55(7).jpeg";
-import ImageWithFlowers from "@/assets/WhatsApp Image 2026-10-27 at 11.01.55(8).jpeg";
-import ImageBackToField from "@/assets/WhatsApp Image 2026-10-27 at 11.01.56(5).jpeg";
-import ImageInField from "@/assets/WhatsApp Image 2026-10-27 at 11.01.56(6).jpeg";
-import ImageInGoldenLight from "@/assets/WhatsApp Image 2026-10-27 at 11.01.56(7).jpeg";
-import ImageInPark from "@/assets/WhatsApp Image 2026-10-27 at 11.01.56(8).jpeg";
-import ImageUnderTrees from "@/assets/WhatsApp Image 2026-10-27 at 11.01.56(9).jpeg";
-import ImageParkPortrait from "@/assets/WhatsApp Image 2026-10-27 at 11.01.57(2).jpeg";
-import ImageParkWide from "@/assets/WhatsApp Image 2026-10-27 at 11.01.57(3).jpeg";
+import FieldPortrait from "@/assets/WhatsApp Image 2026-10-30 at 16.35.26.jpeg";
+import FieldPortraitWithBouquet from "@/assets/WhatsApp Image 2026-10-30 at 16.35.26 (1).jpeg";
+import FieldCloseup from "@/assets/WhatsApp Image 2026-10-30 at 16.35.27.jpeg";
+import FieldBouquetPortrait from "@/assets/WhatsApp Image 2026-10-30 at 16.35.28.jpeg";
+import ParkPortrait from "@/assets/WhatsApp Image 2026-10-30 at 16.35.29.jpeg";
+import ParkBouquetPortrait from "@/assets/WhatsApp Image 2026-10-30 at 16.35.30.jpeg";
+import ParkGoldenHourPortrait from "@/assets/WhatsApp Image 2026-10-30 at 16.35.30 (1).jpeg";
 import { BotanicalDecoration } from "./botanical-decoration";
 import { PhotoLightbox, PhotoLightboxTrigger } from "./photo-lightbox";
 import { ScrollReveal } from "./scroll-reveal";
@@ -19,80 +13,34 @@ import { SectionTitle } from "./section-title";
 
 const photoSources: { image: StaticImageData; alt: string }[] = [
   {
-    image: ImageAtField,
-    alt: "Yazmin entre el pasto alto, con sombrero y vestido blanco.",
+    image: FieldPortrait,
+    alt: "Yazmin posa de perfil entre los trigales al atardecer.",
   },
   {
-    image: ImageAtSunset,
-    alt: "Yazmin posa en el campo bajo la luz del atardecer.",
+    image: FieldPortraitWithBouquet,
+    alt: "Yazmin mira el campo de espaldas mientras sostiene su ramo.",
   },
   {
-    image: ImageWithFlowers,
-    alt: "Yazmin sostiene un ramo de flores en el campo.",
+    image: FieldCloseup,
+    alt: "Retrato de Yazmin entre las espigas, con su sombrero y vestido blanco.",
   },
   {
-    image: ImageBackToField,
-    alt: "Yazmin de espaldas, mirando el campo con su ramo.",
+    image: FieldBouquetPortrait,
+    alt: "Yazmin sostiene un ramo de flores blancas entre los trigales.",
   },
   {
-    image: ImageInField,
-    alt: "Yazmin sonríe en el campo con un ramo de flores.",
+    image: ParkPortrait,
+    alt: "Yazmin posa de cuerpo entero en un parque arbolado.",
   },
   {
-    image: ImageInGoldenLight,
-    alt: "Yazmin, de espaldas, en el campo al atardecer.",
+    image: ParkBouquetPortrait,
+    alt: "Yazmin sonríe en el parque mientras sostiene su ramo.",
   },
   {
-    image: ImageInPark,
-    alt: "Yazmin posa en un parque arbolado con su ramo.",
-  },
-  {
-    image: ImageUnderTrees,
-    alt: "Yazmin posa bajo los árboles en el parque.",
-  },
-  {
-    image: ImageParkPortrait,
-    alt: "Yazmin sostiene su ramo en un parque.",
-  },
-  {
-    image: ImageParkWide,
-    alt: "Yazmin a la distancia en el parque arbolado.",
+    image: ParkGoldenHourPortrait,
+    alt: "Yazmin posa con su ramo bajo los árboles durante la hora dorada.",
   },
 ];
-
-const photos: Photo[] = photoSources.map(({ image, alt }) => ({
-  src: image.src,
-  width: image.width,
-  height: image.height,
-  alt,
-  key: image.src,
-}));
-
-const renderMasonryImage: RenderImage<Photo> = (
-  { alt = "", title, sizes, className, style },
-  { photo, width, height },
-) => (
-  <PhotoLightboxTrigger
-    alt={alt}
-    className={`group relative block w-full overflow-hidden rounded-2xl bg-pinkwash ${className ?? ""}`}
-    height={photo.height}
-    photoSrc={photo.src}
-    style={{
-      ...style,
-      aspectRatio: `${width} / ${height}`,
-    }}
-    width={photo.width}
-  >
-    <Image
-      alt={alt}
-      className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.035] motion-reduce:group-hover:scale-100"
-      fill
-      sizes={sizes}
-      src={photo.src}
-      title={title}
-    />
-  </PhotoLightboxTrigger>
-);
 
 export function PhotoGallery() {
   return (
@@ -122,24 +70,42 @@ export function PhotoGallery() {
         </ScrollReveal>
 
         <div className="mt-9 w-full md:mt-12">
-          <ServerPhotoAlbum
-            breakpoints={[240, 560, 880, 1200]}
-            columns={(width) => (width < 880 ? 2 : 3)}
-            componentsProps={{
-              container: { "aria-label": "Galería de fotos de Yazmin" },
-            }}
-            layout="masonry"
-            photos={photos}
-            render={{ image: renderMasonryImage }}
-            sizes={{
-              size: "1280px",
-              sizes: [
-                { viewport: "(max-width: 767px)", size: "calc(100vw - 32px)" },
-                { viewport: "(max-width: 1279px)", size: "calc(100vw - 48px)" },
-              ],
-            }}
-            spacing={(width) => (width < 560 ? 10 : 16)}
-          />
+          <ul
+            aria-label="Galería de fotos de Yazmin"
+            className="grid grid-cols-2 gap-2.5 md:grid-cols-3 md:gap-4"
+          >
+            {photoSources.map(({ image, alt }, index) => {
+              const isFinalPhoto = index === photoSources.length - 1;
+
+              return (
+                <li
+                  className={isFinalPhoto ? "col-span-2 md:col-span-3" : ""}
+                  key={image.src}
+                >
+                  <PhotoLightboxTrigger
+                    alt={alt}
+                    className="group relative block w-full overflow-hidden rounded-2xl bg-pinkwash"
+                    height={image.height}
+                    photoSrc={image.src}
+                    style={{ aspectRatio: `${image.width} / ${image.height}` }}
+                    width={image.width}
+                  >
+                    <Image
+                      alt={alt}
+                      className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.035] motion-reduce:group-hover:scale-100"
+                      fill
+                      sizes={
+                        isFinalPhoto
+                          ? "(max-width: 767px) calc(100vw - 32px), (max-width: 1279px) calc(100vw - 48px), 1280px"
+                          : "(max-width: 767px) calc(50vw - 21px), (max-width: 1279px) calc(33vw - 24px), 416px"
+                      }
+                      src={image}
+                    />
+                  </PhotoLightboxTrigger>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
       <PhotoLightbox />
