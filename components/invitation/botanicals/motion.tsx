@@ -166,7 +166,7 @@ export function Sway({
       style={{ transformBox: "fill-box", transformOrigin: origin }}
       transition={{
         duration: cycle,
-        delay: delay + 1.8,
+        delay: delay + 0.5,
         ease: "easeInOut",
         repeat: active && !reducedMotion ? Infinity : 0,
       }}

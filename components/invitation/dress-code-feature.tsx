@@ -16,7 +16,7 @@ export function DressCodeFeature() {
       />
       <div className="relative z-10 mx-auto grid w-full max-w-5xl items-center gap-8 md:grid-cols-[1fr_1fr] md:gap-14">
         <ScrollReveal className="text-center md:text-left" variant="heading">
-          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-leaf">
+          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-berry">
             Código de vestimenta
           </p>
           <h2
