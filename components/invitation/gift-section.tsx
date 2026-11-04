@@ -23,6 +23,9 @@ export function GiftSection() {
           Si querés hacerme un regalo, podés usar este alias.
         </p>
         <GiftAlias alias={invitation.giftAlias} />
+        <p className="mx-auto mt-5 max-w-md border-y border-line px-4 py-6 font-display text-2xl font-medium leading-snug text-ink sm:text-3xl">
+          También habrá una urna en el salón.
+        </p>
       </ScrollReveal>
     </section>
   );

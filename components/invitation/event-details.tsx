@@ -10,6 +10,9 @@ export function EventDetails() {
       id="detalles"
     >
       <div className="relative z-10 mx-auto w-full max-w-6xl">
+        <p className="mb-8 rounded-xl bg-pinkwash px-5 py-6 text-center font-display text-3xl font-medium leading-tight text-ink sm:text-4xl">
+          El evento es únicamente para adultos
+        </p>
         <div className="grid divide-y divide-line border-y border-line md:grid-cols-[0.8fr_1fr_1.2fr] md:divide-x md:divide-y-0">
           <ScrollReveal
             className="flex flex-col items-center justify-center py-9 text-center md:px-8"
